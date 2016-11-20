@@ -1,0 +1,106 @@
+@import "variables.less";
+
+.geodash-dashboards-welcome {
+
+  box-sizing: border-box;
+
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
+  h4 { font-size: 1.5rem; }
+  h5 { font-size: 1.33rem; }
+  h6 { font-size: 1.125rem; }
+
+  .input-group {
+    margin-bottom: 8px;
+  }
+
+  .twitter-typeahead {
+
+    height: 34px;
+    line-height: 20px;
+
+    input.typeahead {
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 20px;
+      height: auto;
+    }
+  }
+
+  .input-group-addon {
+    padding: 6px 12px;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+}
+
+.dashboards-welcome {
+
+  a {
+    font-family: @dashboards-welcome-body-font-family;
+  }
+
+  a.btn-primary:hover, a.btn-primary:focus {
+
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+  }
+
+  .tab-pane {
+
+    .welcome-body {
+      font-family: @dashboards-welcome-body-font-family;
+      font-size: @dashboards-welcome-body-font-size;
+    }
+
+    h3.welcome-body {
+      font-family: @dashboards-welcome-body-font-family;
+      font-size: @dashboards-welcome-body-font-size-h3;
+    }
+
+
+    .input-group {
+      width: 400px;
+    }
+
+    .input-group-addon {
+      font-family: @dashboards-welcome-select-font-family;
+      font-size: @dashboards-welcome-select-dropdown-font-size;
+    }
+
+    .input-group-addon.btn-clear {
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d43f3a;
+    }
+
+    .input-group-addon.btn-clear:hover, .input-group-addon.btn-clear:focus, .input-group-addon.btn-clear.focus {
+      color: #fff;
+      background-color: #c9302c;
+      border-color: #ac2925;
+    }
+
+    .select2-container {
+      height: @dashboards-welcome-select-dropdown-height !important;
+    }
+
+    .select2-container .select2-selection--single {
+      height: @dashboards-welcome-select-dropdown-height !important;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    .select2-selection__rendered {
+      font-size: @dashboards-welcome-select-dropdown-font-size;
+      line-height: @dashboards-welcome-select-dropdown-height !important;
+    }
+
+  }
+
+}
+
+.dashboards-welcome-select-dropdown {
+    z-index: @dashboards-welcome-select-dropdown-z-index;
+}

@@ -1,0 +1,44 @@
+---
+name: "geodash-plugin-geonode-dashboards"
+controllers:
+  - DashboardsControllerModalConfig.js
+  - DashboardsControllerModalSecurity.js
+  - DashboardsControllerModalWelcome.js
+  - DashboardsControllerSidebarEditor.js
+directives:
+  - dashboardsModalConfig.js
+  - dashboardsModalSecurity.js
+  - dashboardsModalWelcome.js
+  - dashboardsSidebarEditor.js
+templates:
+  - dashboards_modal_config.tpl.html
+  - dashboards_modal_security.tpl.html
+  - dashboards_modal_welcome.tpl.html
+  - dashboards_sidebar_editor.tpl.html
+less:
+  - dashboards_sidebar.less
+  - dashboards_welcome.less
+modals:
+  - name: dashboards_config
+    ui:
+      mainClass: ""
+      tabs:
+        - { label: Projects, target: modal-dashboards-config-projects }
+        - { label: Plugins, target: modal-dashboards-config-plugins }
+        - { label: Directives, target: modal-dashboards-config-directives }
+        - { label: Templates, target: modal-dashboards-config-templates }
+        - { label: Filters, target: modal-dashboards-config-filters }
+        - { label: YAML, target: modal-dashboards-config-yaml }
+        - { label: JSON, target: modal-dashboards-config-json }
+  - name: dashboards_security
+    ui:
+      mainClass: ""
+      tabs:
+        - { label: YAML, target: modal-dashboards-security-pane-yaml }
+        - { label: JSON, target: modal-dashboards-security-pane-json }
+  - name: dashboards_welcome
+    ui:
+      mainClass: ""
+      tabs:
+        - { label: Introduction, target: modal-dashboards-welcome-intro }
+        - { label: About, target: modal-dashboards-welcome-about }
